@@ -1,13 +1,215 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+nav {
+	background-color: #333;
+	overflow: hidden;
+	padding: 0 20px;
+}
+
+nav a {
+	color: white;
+	display: block;
+	float: left;
+	font-size: 18px;
+	line-height: 60px;
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.active {
+	background-color: #4caf50;
+	color: white;
+}
+
+/* registration page */
+
+.registration-page {
+	width: 99.5vw;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	min-height: 520px;
+	border: 1px solid black;
+	padding: 10px;
+	border-radius: 5px;
+	width: 90%;
+	background-color: #f5f5f5;
+	position: relative;
+}
+
+.form .button-container {
+	position: absolute;
+	bottom: 15px;
+	right: 80px;
+	display: flex;
+	justify-content: space-between;
+	width: 280px;
+}
+
+.cancelbtn {
+	width: 107px;
+	height: 40px;
+	color: red;
+	border: 1px solid red;
+}
+
+.confirmbtn {
+	width: 110px;
+	height: 40px;
+	color: white;
+	background: green;
+	border-radius: 3px;
+	padding: 5px -6px;
+}
+
+.form fieldset {
+	border: none;
+}
+.form label {
+	margin-right: 10px;
+}
+
+.form fieldset legend {
+	text-decoration: underline;
+	font-weight: bold;
+	margin-bottom: 7px;
+}
+
+.form input {
+	height: 25px;
+	border-radius: 5px;
+	padding: 3px;
+}
+.form select {
+	padding: 3px;
+	height: 29px;
+	border-radius: 5px;
+}
+
+.form-row {
+	margin-bottom: 10px;
+}
+
+.multiline-label {
+	display: inline-block;
+	width: 140px;
+	vertical-align: middle;
+}
+
+form input[name="name"] {
+	width: 30%;
+	margin-right: 20px;
+}
+form input[name="age"] {
+	width: 20%;
+	margin-right: 20px;
+}
+
+form select[name="gender"] {
+	width: 15%;
+}
+
+form input[name="mobile"] {
+	width: 20%;
+	margin-right: 12.5%;
+}
+
+form select[name="idType"] {
+	width: 15%;
+	margin-right: 5px;
+	margin-left: 23px;
+}
+form input[name="govtId"] {
+	width: 24%;
+}
+
+form select[name="guardianLabel"] {
+	width: 13%;
+	margin-right: 5px;
+}
+form input[name="guardianName"] {
+	width: 17%;
+	margin-right: 20px;
+}
+
+form input[name="email"] {
+	width: 15%;
+	margin-right: 15px;
+	margin-left: 17px;
+}
+
+form input[name="emergencyContactNumber"] {
+	width: 11%;
+}
+
+form input[name="address"] {
+	width: 30%;
+	margin-right: 87px;
+}
+
+form select[name="state"] {
+	width: 20%;
+	margin-right: 25px;
+	margin-left: 19px;
+}
+
+form select[name="city"] {
+	width: 15%;
+}
+
+form select[name="country"] {
+	width: 20%;
+	margin-right: 16%;
+}
+
+form input[name="pincode"] {
+	margin-left: 15px;
+	width: 15%;
+}
+
+/* other details */
+form input[name="occupation"] {
+	width: 15%;
+	margin-right: 20px;
+}
+
+form select[name="religion"] {
+	width: 15%;
+	margin-right: 20px;
+}
+form select[name="maritalStatus"] {
+	width: 15%;
+	margin-right: 20px;
+}
+
+form select[name="bloodGroup"] {
+	width: 9.5%;
+}
+
+form select[name="nationality"] {
+	width: 10%;
+}
+.error{
+	color:"red";
 }
